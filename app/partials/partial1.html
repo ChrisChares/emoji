@@ -1,1 +1,7 @@
-<p>This is the partial for view 1.</p>
+<div class="container" style="position:relative;">
+	<div>Search: <input ng-model="query"></div>
+			<span style="background=#000000; height:30px; width:30px; float:left;" ng-repeat="emoji in emojis | filter:query" ng-bind-html="emoji[0] |html"></span>
+</div>
+
+
+

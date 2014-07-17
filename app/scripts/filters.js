@@ -8,5 +8,10 @@ angular.module('myApp.filters', []).
     return function(text) {
       return String(text).replace(/\%VERSION\%/mg, version);
     };
-  }]);
+  }])
+  .filter('html',function($sce){
+      return function(input){
+          return $sce.trustAsHtml(input);
+      };
+  });
 })();
