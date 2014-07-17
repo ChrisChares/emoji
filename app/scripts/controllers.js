@@ -7,6 +7,8 @@
 angular.module('myApp.controllers', [])
   .controller('emoji', ['$scope', function($scope) {
 
+  	$scope.alert = { type: 'danger', msg: 'This doesn\'t work in desktop Chrome' };
+  	
   	$scope.emojis = [
   	  [
   	   '1&#x20e3;', 
